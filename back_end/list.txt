@@ -1,0 +1,8 @@
+nodemon
+express
+mongoose
+body-parser
+cors
+dotenv
+morgan
+
