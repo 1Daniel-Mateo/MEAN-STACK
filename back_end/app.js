@@ -4,7 +4,12 @@ const morgan = require('morgan');
 const dotenv = require('dotenv');
 const app = express();
 const conectarDB = require('./config/db');
+const cors = require('cors');
 
+app.use(cors());
+app.options('*', cors());
+
+//Configurando el archivo .env
 dotenv.config({
     path: './config/.env'
 });
