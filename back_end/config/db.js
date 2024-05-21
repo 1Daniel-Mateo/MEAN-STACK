@@ -1,6 +1,7 @@
+//IMPORTACION DE MODULO DE MONGOOSE
 const mongoose = require('mongoose');
 
-//conecion con la base de datos
+//coneccion con la base de datos
 const conectarDB = async () => {
     await mongoose.connect(process.env.MONGO_URL)
     console.log("MongoDB conectado..............");
